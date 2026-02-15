@@ -1,17 +1,7 @@
-export default function Footer({fruits, year, name}){
+export default function Footer(){
     return(
         <section>
-            FOOTER {name} {year} 
-
-            <div>
-                {
-                    fruits.map((x)=>{
-                       return <div>
-                         {x}
-                       </div>
-                    })
-                }
-            </div>
+            FOOTER @2026
         </section>
     )
 }

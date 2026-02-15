@@ -5,19 +5,13 @@ import Footer from "./components/Footer.jsx"
 
 
 export default function App() {
-  const fruits = ["mangoes", "bananas", "Pinaple"]
-  const x = "2026"
-
-  const title = "Learning React"
-  const links =["Home", "About", "Contact"]
 
   return (
     <>
-    <Navbar title={title} links={links} />
+    <Navbar/>
 
-    <h1>Vite + React</h1>
 
-    <Footer fruits={fruits} year={x} name="Kelvin" />
+    <Footer />
     </>
   )
 }
