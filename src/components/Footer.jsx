@@ -5,3 +5,16 @@ export default function Footer(){
         </section>
     )
 }
+
+
+
+
+
+
+
+
+// stylling in react
+// useState react hook
+// useEffect, useContext, useMemo
+// useRef
+// useCallback
