@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx"
 // import { useState } from "react"
 import Addlearner from "./components/Addlearner.jsx"
 import { Toaster } from "react-hot-toast"
+import ViewLearners from "./components/ViewLearners.jsx"
 
 
 export default function App() {
@@ -15,6 +16,8 @@ export default function App() {
     <Navbar />
 
     <Addlearner />
+    
+    <ViewLearners/>
 
     <Footer />
 

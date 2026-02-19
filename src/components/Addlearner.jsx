@@ -28,7 +28,7 @@ export default function Addlearner(){
 
 
     return (
-        <div className="h-[85vh]">
+        <div className="h-[40vh]">
             <h3 className="font-bold text-2xl">Add Learner</h3>
             <p>Name: {name}</p>
             <p>Age: {age}</p>
