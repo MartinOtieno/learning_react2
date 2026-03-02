@@ -14,7 +14,7 @@ export default function Addlearner(){
     function handleSubmit(e){
         e.preventDefault()
 
-        if (age<18 || age>30){
+        if (age<18 || age>35){
             toast.error("Age should be between 18 and 30")
             return
         }

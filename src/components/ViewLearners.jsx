@@ -14,7 +14,7 @@ export default function ViewLearners(){
 
     return (
         <div>
-            <h2 className="font-bold text-2xl rounded-lg">SUDENTS{name}</h2>
+            <h2 className="font-bold text-2xl rounded-lg">SUDENTS: {name}</h2>
             <input onChange={(e)=>setName(e.target.value)} className="border" type="text" />
         </div>
     );
