@@ -2,31 +2,33 @@
 import Navbar from "./components/Navbar.jsx"
 import Footer from "./components/Footer.jsx"
 // import { useState } from "react"
-import Addlearner from "./components/Addlearner.jsx"
+import Addlearner from "./pages/Addlearner.jsx"
 import { Toaster } from "react-hot-toast"
-import ViewLearners from "./components/ViewLearners.jsx"
+import ViewLearners from "./pages/ViewLearners.jsx"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Layout from "./components/Layout.jsx"
 
 
 export default function App() {
 
-
   return (
-    <div className="mx-20">
-    
-    <Navbar />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>} >
+        <Route index element ={<ViewLearners/>}  />
+        <Route path="/addlearner" element ={<Addlearner/>} />
+        </Route>
+      </Routes>
+      <Addlearner/>
 
-    <Addlearner />
-    
-    <ViewLearners/>
+      <ViewLearners />
 
-    <Footer />
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
+    </BrowserRouter>
 
-    <Toaster
-      position="top-center"
-      reverseOrder={false}
-    />
-    </div>
   )
-}
 
-//. export default App
+}

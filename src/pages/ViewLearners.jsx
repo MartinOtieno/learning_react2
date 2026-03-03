@@ -25,8 +25,8 @@ export default function ViewLearners(){
             <h2 className="font-bold text-2xl rounded-lg">SUDENTS: {name}</h2>
             <input onChange={(e)=>setName(e.target.value)} className="border" type="text" />
             {
-                posts.map((post, index)=>(
-                    <div key={index}>
+                posts.map((post, id)=>(
+                    <div className="p-4 border rounded my-2" key={id}>
                         <h1>{post.title}</h1>
                         <p>{post.body}</p>
                     </div>

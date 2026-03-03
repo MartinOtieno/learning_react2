@@ -8,11 +8,6 @@ export default function Footer(){
 
 
 
-
-
-
-
-
 // stylling in react
 // useState react hook
 // useEffect, useContext, useMemo
